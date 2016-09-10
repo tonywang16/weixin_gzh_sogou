@@ -1,0 +1,5 @@
+#xpath for http://weixin.sogou.com
+
+title:  response.css('h4').xpath('./a/text()').extract()[0]
+link:   response.css('h4').xpath('./a/@href').extract()[0]
+author: response.xpath('//div[@class="pos-wxrw"]//@title').extract()[0]
